@@ -1,0 +1,150 @@
+nav ul li:hover>ul {
+    top: 40px !important;
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+}
+
+h1 {
+    color: aliceblue;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.outliners p {
+    color: aliceblue;
+    text-align: justify;
+    text-align: center;
+}
+
+a {
+    color: #dd0094;
+}
+
+.outliners h2 {
+    color: aliceblue;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.anamika {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 5px 10px;
+}
+
+section .middle {
+    position: absolute;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+section .card {
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+}
+
+section .front,
+.back {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    -webkit-transition: transform .6s linear;
+    -moz-transition: transform .6s linear;
+    -ms-transition: transform .6s linear;
+    -o-transition: transform .6s linear;
+}
+
+section .front img {
+    height: 100%;
+    width: 100%;
+}
+
+section .front {
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    -moz-transform: perspective(600px) rotateY(0deg);
+    -ms-transform: perspective(600px) rotateY(0deg);
+    -o-transform: perspective(600px) rotateY(0deg);
+}
+
+section .back {
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+}
+
+section .back-content h2 {
+    margin: 10px auto;
+    color: #2c3e50;
+    text-align: center;
+}
+
+section .back-content span {
+    margin-bottom: 5px;
+}
+
+section .sm {
+    margin: 20px 0;
+}
+
+section .sm a {
+    text-decoration: none;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: white;
+    -webkit-transition: 0.4s;
+    -moz-transition: white;
+    -ms-transition: white;
+    -o-transition: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+section .sm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+section .card:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    -moz-transform: perspective(600px) rotateY(-180deg);
+    -ms-transform: perspective(600px) rotateY(-180deg);
+    -o-transform: perspective(600px) rotateY(-180deg);
+}
+
+section .card:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    -moz-transform: perspective(600px) rotateY(0deg);
+    -ms-transform: perspective(600px) rotateY(0deg);
+    -o-transform: perspective(600px) rotateY(0deg);
+}
+
+@media screen and (max-width:992px) {
+    .anamika {
+        float: left;
+    }
+    section .middle {
+        margin-left: 15px;
+    }
+}

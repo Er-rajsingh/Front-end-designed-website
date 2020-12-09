@@ -1,0 +1,98 @@
+section .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-left: 30px;
+}
+
+section .post-content {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+section .site-content .post-content>.post-image,
+post-title {
+    padding: 2rem 0rem;
+    position: relative;
+}
+
+section .site-content .post-content>.post-image .post-info {
+    color: aliceblue;
+    padding: 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 14vw;
+}
+
+section .site-content .post-content>.post-image>div {
+    overflow: hidden;
+}
+
+section .site-content .post-content>.post-image .img {
+    width: 100%;
+    height: 50%;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+section .site-content .post-content>.post-image .img:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.site-content .post-content .post-title a {
+    color: #dd0094;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-content .post-content .post-title a:hover {
+    color: brown;
+}
+
+.site-content .post-content .post-title p {
+    color: aliceblue;
+    text-align: justify;
+}
+
+@media screen and (max-width:1197px) {
+    main .site-content {
+        grid-template-columns: 70%;
+    }
+    main .nav-design .social {
+        margin-right: 400px !important;
+        padding: 0 30px !important;
+    }
+    nav ul {
+        margin-right: 100px !important;
+    }
+}
+
+@media screen and (max-width:886px) {
+    main .site-content {
+        grid-template-columns: 90%;
+    }
+    main .nav-design .social {
+        margin-right: 350px !important;
+        padding: 0 30px !important;
+    }
+    nav ul {
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    main .site-content {
+        grid-template-columns: 90%;
+    }
+    main .nav-design .social {
+        margin-right: 50px !important;
+        padding: 0 30px !important;
+    }
+}

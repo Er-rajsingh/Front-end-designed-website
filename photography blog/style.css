@@ -1,0 +1,119 @@
+section .container {
+    margin-left: 20px;
+}
+
+section .site-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+section .post-content {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+section .site-content .post-content>.post-image,
+post-title {
+    padding: 2rem 0rem;
+    position: relative;
+}
+
+section .site-content .post-content>.post-image .post-info {
+    color: aliceblue;
+    padding: 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 14vw;
+}
+
+section .site-content .post-content>.post-image>div {
+    overflow: hidden;
+}
+
+section .site-content .post-content>.post-image .img {
+    width: 100%;
+    height: 50%;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+section .site-content .post-content>.post-image .img:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.site-content .post-content .post-title a {
+    color: #dd0094;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-content .post-content .post-title a:hover {
+    color: brown;
+}
+
+.site-content .post-content .post-title p {
+    color: aliceblue;
+    text-align: justify;
+}
+
+.site-content .post-content .post-title .post-btn {
+    border-radius: 5px solid red;
+    -webkit-border-radius: 5px solid red;
+    -moz-border-radius: 5px solid red;
+    -ms-border-radius: 5px solid red;
+    -o-border-radius: 5px solid red;
+    padding: 0.7rem 1.5rem;
+    margin-top: 10px;
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+h2 {
+    margin-left: 140px;
+    color: aliceblue;
+}
+
+.site-content>.sidebar .category-list .list-items {
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    padding: .4rem 2rem;
+    margin: .8rem 6rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    width: 70%;
+    display: flex;
+}
+
+ul li a:hover {
+    color: brown;
+    text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+    main .site-content {
+        grid-template-columns: 100%;
+    }
+    main .category-list li,
+    h2 {
+        margin-left: 5px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    main .site-content {
+        grid-template-columns: 95%;
+    }
+    main .category-list li,
+    h2 {
+        margin-left: 5px !important;
+    }
+}
